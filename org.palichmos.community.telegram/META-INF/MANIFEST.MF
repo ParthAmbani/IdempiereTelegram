@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Telegram
+Bundle-SymbolicName: org.palichmos.community.telegram
+Bundle-Version: 12.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.adempiere.plugin.utils;bundle-version="3.1.0",
+ org.eclipse.osgi;bundle-version="3.10.2",
+ org.adempiere.base
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
+Automatic-Module-Name: org.palichmos.community.telegram
+Bundle-ClassPath: .,
+ lib/emoji-java-5.1.1.jar,
+ lib/telegrambots-6.8.0-jar-with-dependencies.jar
+Bundle-Vendor: Palichmos Team
+Export-Package: com.vdurmont.emoji,
+ org.palichmos.activator,
+ org.palichmos.telegram.adinterface,
+ org.palichmos.telegram.model,
+ org.telegram.telegrambots,
+ org.telegram.telegrambots.meta.api.objects,
+ org.telegram.telegrambots.meta.api.objects.replykeyboard,
+ org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons,
+ org.telegram.telegrambots.meta.generics,
+ org.telegram.telegrambots.updatesreceivers

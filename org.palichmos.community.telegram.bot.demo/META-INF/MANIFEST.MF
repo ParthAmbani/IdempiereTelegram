@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Telegram Bot Demo
+Bundle-SymbolicName: org.palichmos.community.telegram.bot.demo
+Bundle-Version: 12.0.0.qualifier
+Bundle-Vendor: Palichmos Team
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: org.palichmos.community.telegram.bot.demo
+Require-Bundle: org.adempiere.plugin.utils;bundle-version="3.1.0",
+ org.palichmos.community.telegram;bundle-version="1.0.0",
+ org.adempiere.base
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.palichmos.activator.TelegramBotActivator
+Service-Component: OSGI-INF/org.palichmos.bot.demo.botfactory.xml

@@ -1,0 +1,17 @@
+<project name="zklibrary" basedir="." default="copy">
+    <target name="copy">
+        <mkdir dir="lib" />
+        
+        <!-- Download updated emoji-java JAR -->
+        <get
+            src="https://repo1.maven.org/maven2/com/vdurmont/emoji-java/5.1.1/emoji-java-5.1.1.jar"
+            dest="lib/emoji-java-5.1.1.jar"
+            usetimestamp="true" verbose="true" retries="5" />
+        
+        <!-- Download core dependency (telegrambots-meta-6.8.0-jar-with-dependencies.jar) -->
+        <get
+            src="https://repo1.maven.org/maven2/org/telegram/telegrambots-meta/6.8.0/telegrambots-meta-6.8.0-jar-with-dependencies.jar"
+            dest="lib/telegrambots-meta-6.8.0-jar-with-dependencies.jar"
+            usetimestamp="true" verbose="true" retries="5" />
+    </target>
+</project>
